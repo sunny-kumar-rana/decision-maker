@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Decision Maker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Decisions</h1>
+
+      <div id="optionsContainer" class="options"></div>
+
+      <div class="input-area" id="inputArea">
+        <input type="text" id="optionInput" placeholder="Enter option..." />
+        <button onclick="addOption()">Add</button>
+      </div>
+
+      <button class="fab" onclick="toggleInput()">+</button>
+
+      <button class="roll-btn" onclick="roll()">ROLL</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
