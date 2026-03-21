@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.option {
+  background: #1f1f1f;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.option span {
+  cursor: pointer;
+  color: red;
+}
+
+.input-area {
+  margin-top: 20px;
+  display: none;
+}
+
+.input-area input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-area button {
+  padding: 8px 12px;
+  margin-left: 5px;
+}
+
+.fab {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #6200ee;
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.roll-btn {
+  margin-top: 80px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #03dac6;
+  border: none;
+  cursor: pointer;
+}
+
+.result {
+  font-size: 40px;
+  margin: 40px 0;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+}
