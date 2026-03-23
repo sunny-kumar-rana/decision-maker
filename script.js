@@ -1,20 +1,32 @@
 let options = [];
 
 function toggleInput() {
-  const area = document.getElementById("inputArea");
   area.style.display = area.style.display === "none" ? "block" : "none";
 }
 
 function addOption() {
   const input = document.getElementById("optionInput");
   const value = input.value.trim();
-
+  
   if (!value) return;
-
+  
   options.push(value);
   input.value = "";
   renderOptions();
 }
+
+const area = document.getElementById("inputArea");
+area.style.display = "none";
+
+const fab = document.querySelector(".fab");
+fab.addEventListener("click", toggleInput);
+
+const rollButton = document.querySelector(".roll-btn");
+rollButton.addEventListener("click", roll);
+
+const addOptn = document.getElementById("addOption");
+addOptn.addEventListener("click", addOption);
+
 
 function renderOptions() {
   const container = document.getElementById("optionsContainer");
