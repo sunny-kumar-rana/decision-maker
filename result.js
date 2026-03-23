@@ -1,4 +1,6 @@
 const resultText = document.getElementById("resultText");
+const rollAgainBtn = document.getElementById("rollAgain");
+const goBackBtn = document.getElementById("goBack");
 const options = JSON.parse(localStorage.getItem("options")) || [];
 
 let index = 0;
@@ -37,6 +39,8 @@ function goBack() {
   window.location.href = "index.html";
 }
 
+rollAgainBtn.addEventListener("click", rollAgain);
+goBackBtn.addEventListener("click", goBack);
 function start() {
   const random = options[Math.floor(Math.random() * options.length)];
   shuffleAnimation(random);
